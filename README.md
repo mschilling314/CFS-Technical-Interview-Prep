@@ -1,1 +1,5 @@
 # CFS-Technical-Interview-Prep
+This is meant to be used by Northwestern's Chicago Field Studies program in order to allow Student Consultants to conduct practice technical interviews for their peers.
+
+## Structure
+For now, the structure is basically nonexistent, however, in the future, I plan to structure each problem as its own directory, with essentially a "main" file where students should put their code, which when run will have a feature that allows access of either a JSON file or a generated answer imported from another file within the directory.  Thus will come the other two files within each directory, a "generator" file that will essentially be able to generate input for the function, as well as the expected output based on the problem description, and lastly the JSON file that will contain a pre-generated example.  Lastly, each file will have a README that describes the problem and expected outputs.  Additionally, I'll include a separate .md file with notes on solutions/reasoning/extraneous notes, meant to be utilized by interviewers who either don't have a technical background or just don't have familiarity with the particular problem.  
