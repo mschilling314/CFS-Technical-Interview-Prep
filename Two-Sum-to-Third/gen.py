@@ -49,3 +49,10 @@ def printTests(tests):
         print(f"arr: {tests[i][0][0]}")
         print(f"third: {tests[i][0][1]}")
         print(f"expected: {tests[i][1]}")
+
+
+if __name__ == "__main__":
+    filename = "./Two-Sum-to-Third/solutions.json"
+    tests = createTests()
+    with open(filename, 'w') as f:
+        json.dump(tests, f, indent=4)

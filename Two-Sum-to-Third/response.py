@@ -1,4 +1,4 @@
-import gen
+import json
 
 
 def twoSumToThird(arr, third):
@@ -6,7 +6,11 @@ def twoSumToThird(arr, third):
 
 
 if __name__ == "__main__":
-    solutions = gen.createTests() # need to redefine w/ gen.
+    filename = "Two-Sum-to-Third\solutions.json"
+    with open(filename) as f:
+    # Load the contents of the file into a list
+        solutions = json.load(f)
+    #solutions = gen.createTests() # need to redefine w/ gen.
     for index, solution in enumerate(solutions):
         inputs = solution[0]
         expected = solution[1]
