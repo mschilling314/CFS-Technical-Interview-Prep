@@ -17,3 +17,5 @@ Need to also adress how you changed as a result.
 
 # Tech Specific
 ## Tell me about your favorite project.
+## Which software languages are you most comfortable with?
+## What tech stacks have you worked with in the past?
