@@ -1,6 +1,10 @@
 # Summary
 This is meant to be used by Northwestern's Chicago Field Studies program in order to allow Student Consultants to conduct practice technical interviews for their peers.  At present, the problems are written in Python, in the future support for other languages might be added.
 
+Chicago Field Studies, for those who aren't familiar, is a program at Northwestern University where students have the opportunity to match with employers looking for interns, while also earning course credit for a class they take during the internship that covers topics such as workplace culture.  During the quarter leading up to the internship, students are assigned student consultants to advise them, hopefully based on industry though this isn't always the case.  That's why I created this repository, the goal is that students whose consultant doesn't have a technical background may still practice technical interview skills.  More information can be found [here](https://internships.northwestern.edu/).
+
+The problems aren't meant to be too difficult, rather, they can have multiple solutions.  Harder problems, such as dynamic programming problems, will be marked as such in the Problem.md.
+
 # How to Use This Repository
 ## As a CFS Student Consultant
 To use this repository as an SC, simply pick a problem.  There will be notes for you to help you get an idea of what to ask, or how to prompt your student, as well as examples of what correct code looks like.
