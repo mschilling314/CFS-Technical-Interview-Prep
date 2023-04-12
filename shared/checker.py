@@ -1,5 +1,6 @@
 import json
 import inspect
+import os
 
 
 def equivalent(exp, actual) -> bool:
@@ -46,7 +47,7 @@ def equivalent(exp, actual) -> bool:
     
 
 
-def check(func, filename: str) -> None:
+def check(func, filepath: str) -> None:
     """
     This serves to check a solution in response.py, and should be called from the if/main statement.
 
@@ -57,6 +58,7 @@ def check(func, filename: str) -> None:
     Output:
     None, prints out a series of strings telling whether you've successfully passed given test cases, and if not what the expected and output solutions are.
     """
+    filename = os.path.join(filepath, "solutions.json")
     with open(filename) as f:
     # Load the contents of the file into a list
         solutions = json.load(f)
