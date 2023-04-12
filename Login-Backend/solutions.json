@@ -1,0 +1,26 @@
+[
+    [
+        [
+            [
+                [0, "matt", "password"],
+                [1, "matt", "password"],
+                [2, "matt"]
+            ]
+        ],
+        ["Success",
+         "Success",
+         "Success"]
+    ],
+    [
+        [
+            [
+                [1, "matt", "password"],
+                [0, "matt", "password"],
+                [2, "matt"]
+            ]
+        ],
+        ["User doesn't exist",
+         "Success",
+         "Internal error: user not signed in"]
+    ]
+]
