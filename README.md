@@ -5,8 +5,14 @@ This is meant to be used by Northwestern's Chicago Field Studies program in orde
 ## As a CFS Student Consultant
 To use this repository as an SC, simply pick a problem.  There will be notes for you to help you get an idea of what to ask, or how to prompt your student, as well as examples of what correct code looks like.
 
+To actually conduct the interview, pick as many questions as time allows (a good guideline is to give about 15 minutes per question).  When it's time to interview, provide your interviewee with a link to this repository, and tell them to fork the repository and clone it to their device, then screen-share with you as they open it in their favorite text editor or IDE.  If they don't use an IDE, they will need to run the response.py script from a terminal, which I don't recommend.  
+
+They should (hopefully) know what this means, Git is a huge part of the software engineering industry and everyone uses an IDE such as Visual Studio Code, so there shouldn't be too many issues with setup (though I need to conduct some user testing to be certain, sorry).
+
 ## As an Interviewee
-To use this repository as an interviewee, you should ideally download only three files, Problem.md, response.py, and solutions.json.  These files were created with the intent that you could feasibly solve and check your solutions without seeing possible answers.  This will hopefully allow your SC to better guide you, regardless of whether they've got coding experience or not!
+To use this repository as an interviewee, you should fork and then clone the repository onto your computer.  DO NOT OPEN InterviewerNotes.md FROM ANY DIRECTORY!!!!
+
+Your SC will select a problem that should correspond to one of the directories.  You'll want to open Problem.md and response.py, you'll see an empty function for you to fill out with a pass statement in it.
 
 When you have what you believe to be a working solution, you should be able to run response.py, which should print out whether the test cases have passed or not.  If they fail, also printed will be the expected value and your output.
 
