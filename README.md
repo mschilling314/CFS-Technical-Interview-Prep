@@ -42,5 +42,12 @@ Worth noting is that response.py needs from the JSON a list of lists, with the f
 ```
 Where your input list matches the order of the function signature (this is only important for those extending this repo, so if you only want to use the repo don't worry).  The expected output is self-explanatory, it should be whatever you expect the output for the given input to be.
 
+
+# Coming Soon:
+- gen.py for Login-Backend
+- Dynamic Programming Challenges
+- Support for other languages?
+- More cool questions!
+
 # Contact
 Should anything be broken, or you just have suggestions, feel free to reach out to me at matthewschilling2023@u.northwestern.edu!
