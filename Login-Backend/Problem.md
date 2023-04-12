@@ -21,6 +21,8 @@ Entries of this type will have the format [2, username].  The 2 indicates that t
 # Output
 Your output will be a list of strings, either "Success" if the action at the corresponding input index is successful, or the appropriate error message as specified within the Inputs section.
 
+If a number other than 0, 1, or 2 is given, respond with "Internal error: not a valid command".
+
 # Examples
 ## Example 1
 ```
