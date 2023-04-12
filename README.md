@@ -35,12 +35,23 @@ This allows for relatively easy extension of this environment, currently, provid
 
 Worth noting is that response.py needs from the JSON a list of lists, with the following sort of format:
 ```
-[[[input1.1, input1.2, ...], expected_output1],
- [[input2.1, input2.2, ...], expected_output2],
- ...
+[
+    [
+        [input1.1, input1.2, ...], 
+        expected_output1
+    ],
+    [
+        [input2.1, input2.2, ...], 
+        expected_output2
+     ],
+    ...,
+    [
+        [inputn.1, inputn.2, ...], 
+        expected_outputn
+    ]
 ]
 ```
-Where your input list matches the order of the function signature (this is only important for those extending this repo, so if you only want to use the repo don't worry).  The expected output is self-explanatory, it should be whatever you expect the output for the given input to be.
+Where your input list matches the order of the function signature (this is only important for those extending this repo, so if you only want to use the repo don't worry).  The expected output is self-explanatory, it should be whatever you expect the output for the given input to be, and can be any of the following types: int, float, bool, str, tuple, list, set, or dict.
 
 
 # Coming Soon:
