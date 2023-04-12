@@ -61,6 +61,7 @@ Where your input list matches the order of the function signature (this is only 
 # Coming Soon:
 - gen.py for Login-Backend
 - Dynamic Programming Challenges
+- Support for non-traditional data types like class instances?
 - Support for other languages?
 - More cool questions!
 
