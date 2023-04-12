@@ -11,5 +11,4 @@ def twoSumToThird(arr, third):
 
 
 if __name__ == "__main__":
-    solution_path = os.path.dirname(__file__)
-    checker.check(twoSumToThird, solution_path)
+    checker.check(twoSumToThird, os.path.dirname(__file__))

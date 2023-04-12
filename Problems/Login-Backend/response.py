@@ -13,5 +13,4 @@ def login(actions):
 
 
 if __name__ == "__main__":
-    solution_path = os.path.dirname(__file__)
-    checker.check(login, solution_path)
+    checker.check(login, os.path.dirname(__file__))
