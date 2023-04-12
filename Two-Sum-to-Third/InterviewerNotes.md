@@ -62,3 +62,11 @@ while i != j:
         j -= 1
 return False
 ```
+
+
+## Notes on Other Formulations
+### Artibtrary Elements
+Interviewee should mention something along the lines of it being far more complex time-wise, as well as that the function signature will change to accomodate having to check n elements.  One possible solution involves recursion, where they essentially iterate over the array and call the function again checking for n-1 element sums, and holding out an element.  Bonus points if they mention (or come up with) a dynamic programming solution.
+
+### Third as an array index
+Nothing much changes here actually, you simply query arr[third] at some point towards the beginning of your solution.
