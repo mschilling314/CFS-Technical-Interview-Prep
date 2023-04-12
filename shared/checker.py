@@ -6,12 +6,13 @@ def equivalent(exp, actual) -> bool:
     """
     Similar to serialization, needs to be able to give equivalence for non-simple objects.
 
-    Inputs can be two objects of type None, int, float, bool, str, list, tuple, set, dict, or class instance.
+    Inputs can be two objects of type None, int, float, bool, str, list, tuple, set, or dict.
     """
-    if (exp is None and actual is not None) or (exp is not None and actual is None):
-        return False
-    elif exp is None:
-        return True
+    if exp is None:
+        if actual is None:
+            return True
+        else:
+            return False
     objType = type(exp)
     if not isinstance(actual, objType):
         return False
@@ -24,16 +25,20 @@ def equivalent(exp, actual) -> bool:
             if not equivalent(exp[i], actual[i]):
                 return False
         return True
-    if isinstance(objType, set):
-        return equivalent(list(exp), list(actual))
-    if isinstance(objType, dict):
+    if isinstance(exp, set):
         if len(exp) != len(actual):
             return False
-        expKeys = exp.keys()
-        if not equivalent(expKeys, actual.keys()):
+        for item in exp:
+            if item not in actual:
+                return False
+        return True
+    if isinstance(exp, dict):
+        if len(exp) != len(actual):
             return False
-        for k in exp.keys():
-            if not equivalent(expKeys, actual[k]):
+        for key in exp.keys():
+            if key not in actual:
+                return False
+            if not equivalent(exp[key], actual[key]):
                 return False
         return True
     if inspect.isclass(objType):
@@ -64,4 +69,3 @@ def check(func, filename: str) -> None:
             print(f"Test case {index} passed!")
         else:
             print(f"Test case {index} failed, expected {expected} but got {output}.")
-
