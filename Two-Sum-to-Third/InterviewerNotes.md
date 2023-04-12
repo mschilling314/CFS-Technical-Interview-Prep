@@ -1,3 +1,6 @@
+# Why
+This question is a favorite because of the fact that it has three separate solutions, and one of the alternative formulations of the question can provide a segway into dynamic programming (an important pattern to know).  It's great to use to try and see how well an interviewee can reason through a problem, as well as consider alternative ways for approaching the problem, while hopefully still being relatively easy to follow.
+
 # Possible Solutions
 ## Brute Force
 The brute force solution is simply to check every element versus every other element.  This has time complexity of O(n<sup>2</sup>), with constant space complexity.  In short, it's a pretty bad solution unless all you care about is space.  Here's the code (written in Python):
@@ -63,10 +66,20 @@ while i != j:
 return False
 ```
 
+# Things to Ask
+## Edge Case
+The primary edge case to worry about is double counting.  In particular, bring up two scenarios: arr = [1, 1, 4] and arr = [1, 2, 4] with third = 2 for both.  Often, interviewees might not consider that their solution for the second arr might return True because it's looking at the 1 twice.  Alternatively, in fixing this they might accidentally break their solution such that it can no longer recognize duplicates, as in the first arr, and would return False even though it should return True.
 
-## Notes on Other Formulations
-### Artibtrary Elements
+## When they've come up with their first solution
+Ask if they can think of other ways to solve the problem, or why they believe their solution to be optimal.
+
+## Hint for Balanced Solution
+Usually, you could either mention that it involves sorting or that the time complexity is O(nlogn) which will usually imply that sorting is involved.
+
+
+# Notes on Other Formulations
+## Artibtrary Elements
 Interviewee should mention something along the lines of it being far more complex time-wise, as well as that the function signature will change to accomodate having to check n elements.  One possible solution involves recursion, where they essentially iterate over the array and call the function again checking for n-1 element sums, and holding out an element.  Bonus points if they mention (or come up with) a dynamic programming solution.
 
-### Third as an array index
+## Third as an array index
 Nothing much changes here actually, you simply query arr[third] at some point towards the beginning of your solution.
