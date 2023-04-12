@@ -14,7 +14,7 @@ if __name__ == "__main__":
     for index, solution in enumerate(solutions):
         inputs = solution[0]
         expected = solution[1]
-        output = twoSumToThird(inputs[0], inputs[1])
+        output = twoSumToThird(*inputs)
         if output == expected:
             print(f"Test case {index} passed!")
         else:
