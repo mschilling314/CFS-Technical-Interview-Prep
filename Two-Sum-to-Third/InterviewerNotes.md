@@ -32,6 +32,17 @@ for x in arr:
             return True
 return False
 ```
+A more succinct version (credit to Victoria Tran for coming up with this one)
+```
+hashmap = {}
+for i in arr:
+    answer = third - i
+    if answer not in hashmap:
+        hashmap[i] = i
+    else:
+        return True
+return False
+```
 
 
 ## Balanced Solution

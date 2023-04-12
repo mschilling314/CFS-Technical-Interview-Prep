@@ -10,4 +10,7 @@ def twoSumToThird(arr, third):
 
 
 if __name__ == "__main__":
-    checker.check(twoSumToThird, "Two-Sum-to-Third\solutions.json")
+    try:
+        checker.check(twoSumToThird, ".\Two-Sum-to-Third\solutions.json")
+    except:
+        checker.check(twoSumToThird, "./Two-Sum-to-Third/solutions.json")

@@ -24,7 +24,7 @@ None of the combinations will sum to third.
 
 ### Example 3
 Inputs: arr = [1, 2, 5], third = 5  
-Expected Output: True
+Expected Output: False
 #### Explanation: 
 While 5 is present, 0 is not.
 
