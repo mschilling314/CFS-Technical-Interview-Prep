@@ -33,7 +33,7 @@ While 5 is present, 0 is not.
 
 ## Example 4
 Inputs: arr = [1, 2, 4], third = 8  
-Expected Output: True
+Expected Output: False
 ## Explanation: 
 This is potentially a corner case, depending on the solution, but ultimately no two elements in arr sum to 8.
 
