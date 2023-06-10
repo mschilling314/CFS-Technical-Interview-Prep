@@ -1,8 +1,12 @@
 import sys
 import os
+import platform
 
 
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..\..')))
+if platform.system() == "Windows":
+    sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..\..')))
+else:
+    sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
 from shared import checker
 
 
