@@ -63,11 +63,19 @@ def check(func, filepath: str) -> None:
     # Load the contents of the file into a list
         solutions = json.load(f)
     #solutions = gen.createTests() # need to redefine w/ gen.
+    print_statements = []
+    failed_test = False
     for index, solution in enumerate(solutions):
         inputs = solution[0]
         expected = solution[1]
         output = func(*inputs)
         if equivalent(expected, output):
-            print(f"Test case {index} passed!")
+            print_statements.append(f"Test case {index} passed for the input {inputs}!")
         else:
-            print(f"Test case {index} failed, expected {expected} but got {output}.")
+            failed_test = True
+            print_statements.append(f"Test case {index} failed, expected {expected} from the input {inputs} but got {output}.")
+    if failed_test:
+        for test in print_statements:
+            print(test)
+    else:
+        print(f"\nAll tests passed!\n")
